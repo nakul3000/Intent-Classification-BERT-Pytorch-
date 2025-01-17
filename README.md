@@ -24,13 +24,10 @@ The **CLINC150** dataset is a comprehensive collection of user queries across va
 ├── data
 │   └── clinc150/         # Directory containing the CLINC150 dataset
 ├── scripts
-│   ├── train.py          # Script to train the BERT model
-│   ├── evaluate.py       # Script to evaluate the trained model
-│   └── preprocess.py     # Script for data preprocessing and tokenization
-├── models
-│   └── intent_classifier.pt  # Saved PyTorch model after fine-tuning
+│   ├── intent_classifier.ipynb   # Script to train & evaluate the BERT model
+│ 
 ├── README.md
-└── requirements.txt      # Required Python packages
+
 ```
 
 ## Installation
