@@ -46,45 +46,9 @@ The **CLINC150** dataset is a comprehensive collection of user queries across va
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. **Install the required packages:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Download and prepare the CLINC150 dataset:**
+3. **Download and prepare the CLINC150 dataset:**
 
    Place the dataset in the `data/clinc150/` directory, or modify the paths in the scripts to point to your dataset location.
-
-## Usage
-
-### Data Preprocessing
-
-Run the preprocessing script to tokenize the dataset and prepare it for training:
-
-```bash
-python scripts/preprocess.py
-```
-
-### Training
-
-Train the BERT-based intent classifier using the provided script:
-
-```bash
-python scripts/train.py
-```
-
-Training will fine-tune the `bert-base-uncased` model on the CLINC150 dataset and save the best performing model to `models/intent_classifier.pt`.
-
-### Evaluation
-
-After training, evaluate the model's performance on the test set:
-
-```bash
-python scripts/evaluate.py
-```
-
-The script will load the fine-tuned model, perform inference on the test data, and report the accuracy. You should see a testing accuracy of around **95%**.
 
 ## Results
 
